@@ -121,15 +121,12 @@ header{
 
 /* main */
 
-main{
+.raju{
     background-color: #192a56;
+    padding: 70px 0;
 }
 
-.raja{
-   
-    margin: 0 auto;
 
-}
 
 
 .texr{
@@ -142,9 +139,10 @@ main{
 
 .main-section{
     width: 1100px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-gap: 50px;
 }
 
 .soto-t{
@@ -166,6 +164,79 @@ main{
     font-size: 40px;
 }
 
+/* 3rd-section */
+
+.khai-ni{
+    background-color: #192a56b0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1150PX;
+    margin: 0px auto;
+    
+    padding: 80px 0;
+}
+
+.kiso-na{
+    margin-right: 30px;
+    text-align: left;
+}
+
+.kiso-na h2{
+
+    font-weight: bold;
+}
+.kiso-na p{
+    padding: 20px 0;
+}
+
+.kiso-na ul{
+    /* flex-direction: column; */
+
+}
+
+.kiso-na ol li{
+    list-style-type: disc;
+}
+
+a{
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: yellow;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+}
+
+
+
+.kurri{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.vai-jan{
+    border: 2px solid green;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.vai-jan h2{
+    padding: 15px 0;
+}
+
+
+
+
+
+
 /* responsive-website */
 
 @media only screen and (max-width:688px) {
@@ -178,8 +249,27 @@ main{
         width: 100%;
 
     }
+
+    .container{
+        display: block;
+        margin-left: 70px;
+        margin-right: 50px;
+        width: 100%;
+      
+    }
+
+    .kurri{
+        
+        grid-template-columns:  1fr;
+        width: 100%;
+        
+        
+    }
+
    
 }
+
+
 
 @media only screen and (min-width:689px) and (max-width:1099px
 ){
@@ -191,6 +281,20 @@ main{
         grid-gap: 20px;
         width: 100%;
 
+    }
+
+    
+    .container{
+        display: block;
+      
+    }
+    
+
+    .kurri{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        
     }
 
 }
